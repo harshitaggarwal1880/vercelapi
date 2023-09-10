@@ -1,9 +1,10 @@
-import express from "express"
-import dotenv from "dotenv";
+// import express from "express"
+// import dotenv from "dotenv";
+const express = require("express")
 
 const app = express();
 
-dotenv.config();
+require("dotenv").config();
 
 app.get("/", (req,res)=>{
     res.send(process.env.VARIABLE)
